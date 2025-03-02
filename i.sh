@@ -31,7 +31,7 @@ then
 	echo "YES"
 	time git clone --branch tuningfork https://github.com/dimitre/openframeworks --depth 1 ofwork
 	cd ofwork
-	time ./libs.sh
+	time ./libs/libs.sh
 	cd ofGen
 	./compile.sh
 	./install.sh
