@@ -29,7 +29,7 @@ echo    # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
 	echo "YES"
-	time git clone --branch tuningfork https://github.com/dimitre/openframeworks --depth 1 ofwork
+	time git clone --branch ofworks https://github.com/dimitre/openframeworks --depth 1 ofworks
 	cd ofwork
 	time ./libs/libs.sh
 	cd ofGen
