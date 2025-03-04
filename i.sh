@@ -20,8 +20,8 @@ section() {
 
 # echo "parameter"
 echo $@
-section "OFWork (OpenFrameworks Fork)"
-echo "Installing to ${PWD}/ofwork"
+section "OFWorks (OpenFrameworks Fork)"
+echo "Installing to ${PWD}/ofworks"
 read -p "Proceed? (y/n) " -n 1 -r
 
 
@@ -30,7 +30,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
 	echo "YES"
 	time git clone --branch ofworks https://github.com/dimitre/openframeworks --depth 1 ofworks
-	cd ofwork
+	cd ofworks
 	time ./libs/libs.sh
 	cd ofGen
 	./compile.sh
