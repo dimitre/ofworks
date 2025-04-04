@@ -3,11 +3,13 @@ cd "$(dirname "$0")"
 
 set -e
 
-if ! command -v brew 2>&1 >/dev/null
-then
-    echo "Brew not installed, install via instructions in the browser and then run the script again"
-    open https://brew.sh
-    exit
+if [[ "$(uname -s)" == "Darwin" ]]; then
+    if ! command -v brew 2>&1 >/dev/null
+    then
+        echo "Brew not installed, install via instructions in the browser and then run the script again"
+        open https://brew.sh
+        exit
+    fi
 fi
 
 COLOR='\033[0;32m'
