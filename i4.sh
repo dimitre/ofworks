@@ -1,6 +1,5 @@
 #!/bin/bash
 cd "$(dirname "$0")"
-
 set -e
 
 if [[ "$(uname -s)" == "Darwin" ]]; then
@@ -11,18 +10,23 @@ if [[ "$(uname -s)" == "Darwin" ]]; then
         exit
     fi
 fi
-
 COLOR='\033[0;32m'
 COLOR2='\033[0;34m'
 NC='\033[0m' # No Color
 
 section() {
-    printf "💿${COLOR} ${@} ${NC}\n\r"
+    printf "💻 ${COLOR}${@}${NC}\n\r"
 }
 
 # echo "parameter"
-echo $@
 section "OFWorks (OpenFrameworks Fork)"
+echo $@
+
+if [ -d "ofworks" ]; then
+    echo "Folder ${PWD}/ofworks exists, exiting"
+    exit
+fi
+
 echo "Installing to ${PWD}/ofworks"
 read -p "Proceed? (y/n) " -n 1 -r
 
