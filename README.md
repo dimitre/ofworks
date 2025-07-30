@@ -53,9 +53,12 @@ defines:
 ```
 
 ## Differences
+All Cairo functionality is moved to a new core addon called
+```ofxCairo```.
 
-This fork doesn't include Classic Math by default (ofVec3f)
-if you need any of those types you can add the addon ```ofxMath``` to your project and use ```#include "ofxMath.h"``` in your project
+All URL handling libraries and frameworks are moved to an addon called ofxURL. Not adding this by default reduces about 4 Megabytes of binary final size, it probably compiles faster.
+
+All classic OF math functionality was moved to an addon called ```ofxMath```, include it if you need to use any of this:
 ```
 ofMatrix3x3.cpp
 ofMatrix3x3.h
