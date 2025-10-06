@@ -40,7 +40,7 @@ then
 	time ./libs/libs.sh
 	cd ofGen
 	./compile.sh
-	./install.sh
+	# ./install.sh
 	cd ..
 else
 	echo "ok, exit without installing."
