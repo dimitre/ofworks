@@ -37,9 +37,10 @@ then
 	echo "YES"
 	time git clone --branch ofworks https://github.com/dimitre/openframeworks --depth 1 ofworks
 	cd ofworks
-	time ./libs/libs.sh
-	cd ofGen
-	./compile.sh
+	./ofStart.sh
+	# time ./libs/libs.sh
+	# cd ofGen
+	# ./compile.sh
 	# ./install.sh
 	cd ..
 else
