@@ -46,5 +46,6 @@ in ofWorks:<br>
 Core doesn't have Cairo functionality. Moved aside to an addon ```ofxCairo``` (libraries are not ready yet).<br>
 Core doesn't have ofLoadURL capabilities, moved aside to an addon ```ofxURL``` (libs not ready)<br>
 This reduces 4 megabytes of final binary size.<br>
-Vintage of math is moved aside to an addon called ofxMath. core only uses glm operations. it can be added if needed to access any of this objects: ```ofPoint, ofMatrix3x3, ofMatrix4x4, ofQuaternion, ofVec2f, ofVec3f, ofVec4f, ofVectorMath```
+Vintage of math is moved aside to an addon called ofxMath. core only uses glm operations. it can be added if needed to access any of this objects: <br>
+```ofPoint, ofMatrix3x3, ofMatrix4x4, ofQuaternion, ofVec2f, ofVec3f, ofVec4f, ofVectorMath```<br>
 FreeImage was removed and now ofImage has a mango library backend (faster and more modern). For now loading and saving of TIF, PNG and JPG is OK. Some other operations to be implemented.
