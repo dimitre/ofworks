@@ -3,7 +3,10 @@
 You can use the following script to test ofWorks fork<br>
 This script install everything needed (libraries, ofGen) to run your projects<br>
 ofGen is a command line project generator and it will be available in your path.<br>
-Tested on macOS / Linux (Ubuntu x86_64) and Windows.
+Tested on macOS / Linux (Ubuntu x86_64) and Windows.<br><br>
+
+To run in windows you will need to install chalet first<br>
+<a href="https://chalet-work.space/download/">Chalet Download</a><br>
 
 ```bash
 curl -fsSL https://dmtr.org/of.sh | bash
