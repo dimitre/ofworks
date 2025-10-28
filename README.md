@@ -4,7 +4,7 @@ You can use the following script to test OFWorks fork (macOS only now).
 This script will bootstrap installation, clone this fork and install libs, compile and install ofgen tool (projectGenerator substitute here) to your path.
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/dimitre/ofworks/refs/heads/main/of.sh)" pwd
+curl -fsSL https://dmtr.org/of.sh | bash
 ```
 
 
