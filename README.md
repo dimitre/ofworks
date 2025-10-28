@@ -38,8 +38,8 @@ Today the default ones are:
 VSCode to be re-added soon.<br>
 
 ## Chalet / ZED combo
-For a unified experience in all platforms you can install <a href="https://zed.dev" target="_blank">ZED editor</a>
-after running ofGen you can open your project: ```zed . ``` and build by pressing Command + Shift + R in macOS, or Alt + Shift + R in Windows / Linux
+For a unified experience in all platforms you can install <a href="https://zed.dev" target="_blank">ZED editor</a><br>
+after running ofGen you can open your project: ```zed . ``` and build by pressing Command + Shift + R in macOS, or Alt + Shift + R in Windows / Linux<br>
 
 ## openFrameworks / ofWorks Differences
 in ofWorks:<br>
