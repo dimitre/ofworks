@@ -1,5 +1,11 @@
-# ofWorks
-
+```
+o-o  o--o o       o  o-o  o--o  o  o  o-o
+o   o |    |       | o   o |   | | /  |
+|   | O-o  o   o   o |   | O-Oo  OO    o-o
+o   o |     \ / \ /  o   o |  \  | \      |
+o-o  o      o   o    o-o  o   o o  o o--o
+`
+``
 You can use the following script to test ofWorks fork<br>
 ```bash
 curl -fsSL https://dmtr.org/of.sh | bash
