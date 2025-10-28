@@ -14,7 +14,7 @@ to create a project you can go to your project folder in terminal and invoke ofG
 you can pass parameters like this
 ```
 cd $ofw/apps/workApp/awesome
-ofGen templates=zed,macos,make addons=ofxMidi,ofxOpencv ofpath=../../.. path=/Volumes/tool/Transcend
+ofgen templates=zed,macos,make addons=ofxMidi,ofxOpencv ofpath=../../.. path=/Volumes/tool/Transcend
 ```
 
 or use a configuration file called ```of.yml``` on your project folder, like the following example
