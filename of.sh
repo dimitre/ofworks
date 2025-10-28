@@ -1,5 +1,4 @@
 #!/bin/bash
-cd "$(dirname "$0")"
 set -e
 
 COLOR='\033[0;32m'
