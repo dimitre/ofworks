@@ -10,54 +10,28 @@ Tested on macOS / Linux (Ubuntu x86_64) and Windows.<br>
 
 Pre requisites in Windows are <a href="https://git-scm.com/install/windows" target="_blank">Github for Windows</a> and <a href="https://chalet-work.space/download/" target="_blank">Chalet Build System</a>.
 
-
 ## ofGen
-to create a project you can go to your project folder in terminal and invoke ofGen
-you can pass parameters like this
-```
+ofgen tool will be installed and available in path, so you can navigate to your project folder and call it, like
+```sh
 cd $ofw/apps/workApp/awesome
-ofgen templates=zed,macos,make addons=ofxMidi,ofxOpencv ofpath=../../.. path=/Volumes/tool/Transcend
+ofgen
 ```
-
-or use a configuration file called ```of.yml``` on your project folder, like the following example
-if you have this file you can just invoke ```ofGen``` from your project folder and it is done
-You can use ```ofgen import``` to create a default of.yml file from your addons.make.
-
-```yml
-# name: XPFlagship2024
-
-ofpath: ../../..
-
-addons:
-  - ofxAssimpModelLoader
-  - ofxMicroUI
-  # - ofxMicroUIMidiController
-  - ofxTools
-  - ofxScenes
-  - ofxNetwork
-  - ofxOsc
-  # - ofxSyphon
-  - ofxTweeny
-  - ofxVideoRecorder
-# - ofxMidi
-
-templates: [macos, zed, make]
-# platforms: [osx]
-
-sources:
-  # - ../XP/src
-  # - ../DEDGE-RIO/src
-  - ../XP/src/additional
-  - ../Aura/src2 #only testing
-
-defines:
-  - NANOVG_GL2_IMPLEMENTATION
-
+or
+```sh
+ofgen buildrun
 ```
+without parameters it will detect your platform and create the recommended templates for your platform.
+Today the default ones are:
+
+| Platform | Templates |
+| :--- | :---: |
+| macOS | XCode, Chalet, ZED |
+| Windows | Chalet, ZED |
+| Linux | Chalet, ZED |
+
 
 ## Differences
-All Cairo functionality is moved to a new core addon called
-```ofxCairo```.
+Cairo functionality is moved to a new core addon called ```ofxCairo```.
 
 All URL handling libraries and frameworks are moved to an addon called ofxURL. Not adding this by default reduces about 4 Megabytes of binary final size, it probably compiles faster.
 
