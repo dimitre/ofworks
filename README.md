@@ -35,25 +35,16 @@ Today the default ones are:
 | Windows | Chalet, ZED |
 | Linux | Chalet, ZED |
 
+VSCode to be re-added soon.<br>
 
-## Differences
-Cairo functionality is moved to a new core addon called ```ofxCairo```.
+## Chalet / ZED combo
+For a unified experience in all platforms you can install <a href="https://zed.dev" target="_blank">ZED editor</a>
+after running ofGen you can open your project: ```zed . ``` and build by pressing Command + Shift + R in macOS, or Alt + Shift + R in Windows / Linux
 
-All URL handling libraries and frameworks are moved to an addon called ofxURL. Not adding this by default reduces about 4 Megabytes of binary final size, it probably compiles faster.
-
-All classic OF math functionality was moved to an addon called ```ofxMath```, include it if you need to use any of this:
-```
-ofMatrix3x3.cpp
-ofMatrix3x3.h
-ofMatrix4x4.cpp
-ofMatrix4x4.h
-ofPoint.h
-ofQuaternion.cpp
-ofQuaternion.h
-ofVec2f.cpp
-ofVec2f.h
-ofVec3f.h
-ofVec4f.cpp
-ofVec4f.h
-ofVectorMath.h
-```
+## openFrameworks / ofWorks Differences
+in ofWorks:<br>
+Core doesn't have Cairo functionality. Moved aside to an addon ```ofxCairo``` (libraries are not ready yet).<br>
+Core doesn't have ofLoadURL capabilities, moved aside to an addon ```ofxURL``` (libs not ready)<br>
+This reduces 4 megabytes of final binary size.<br>
+Vintage of math is moved aside to an addon called ofxMath. core only uses glm operations. it can be added if needed to access any of this objects: ```ofPoint, ofMatrix3x3, ofMatrix4x4, ofQuaternion, ofVec2f, ofVec3f, ofVec4f, ofVectorMath```
+FreeImage was removed and now ofImage has a mango library backend (faster and more modern). For now loading and saving of TIF, PNG and JPG is OK. Some other operations to be implemented.
