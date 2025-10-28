@@ -1,12 +1,13 @@
-# OFWorks
+# ofWorks
 
-You can use the following script to test OFWorks fork (macOS only now).
-This script will bootstrap installation, clone this fork and install libs, compile and install ofgen tool (projectGenerator substitute here) to your path.
+You can use the following script to test ofWorks fork<br>
+This script install everything needed (libraries, ofGen) to run your projects<br>
+ofGen is a command line project generator and it will be available in your path.<br>
+Tested on macOS / Linux (Ubuntu x86_64) and Windows.
 
 ```bash
 curl -fsSL https://dmtr.org/of.sh | bash
 ```
-
 
 ## ofGen
 to create a project you can go to your project folder in terminal and invoke ofGen
