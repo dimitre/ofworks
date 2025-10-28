@@ -1,9 +1,9 @@
-```diff
-! o-o  o--o o       o  o-o  o--o  o  o  o-o
-!o   o |    |       | o   o |   | | /  |
-!|   | O-o  o   o   o |   | O-Oo  OO    o-o
-!o   o |     \ / \ /  o   o |  \  | \      |
-! o-o  o      o   o    o-o  o   o o  o o--o
+```
+ o-o  o--o o       o  o-o  o--o  o  o  o-o
+o   o |    |       | o   o |   | | /  |
+|   | O-o  o   o   o |   | O-Oo  OO    o-o
+o   o |     \ / \ /  o   o |  \  | \      |
+ o-o  o      o   o    o-o  o   o o  o o--o
 ```
 You can use the following script to test ofWorks fork<br>
 ```bash
