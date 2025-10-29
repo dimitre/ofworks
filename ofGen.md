@@ -70,6 +70,7 @@ addons:
 
 templates: [macos, zed, make]
 
+# More advanced settings
 sources:
   # - ../XP/src
   # - ../DEDGE-RIO/src
@@ -79,4 +80,9 @@ sources:
 defines:
   - NANOVG_GL2_IMPLEMENTATION
   - FORCE_RGFW
+
+frameworks: [Security, IOKit]
 ```
+
+## To be implemented soon
+- [ ] Addons with git address. so you can move a project to another computer and it will clone automatically if addon is not there. You will be able to pinpoint a tag or a branch.
