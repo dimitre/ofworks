@@ -1,5 +1,11 @@
 
-# ofGen
+```
+ ░░░  ▒▒▒▒  ▓▓▓  ████ █   █    Project Generator
+░   ░ ▒    ▓     █    ██  █    for ofWorks
+░   ░ ▒▒▒  ▓  ▓▓ ███  █ █ █    (OpenFrameworks fork)
+░   ░ ▒    ▓   ▓ █    █  ██
+ ░░░  ▒     ▓▓▓  ████ █   █
+```
 ofGen is a command line app, installed to your path (if you allow in installation step)
 if you need to re-run installation step you can go
 ```
