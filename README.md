@@ -13,7 +13,7 @@ This script install everything needed (libraries, ofGen) to run your projects<br
 ofGen is a command line project generator and it will be available in your path.<br>
 Tested on macOS / Linux (Ubuntu x86_64) and Windows.<br>
 
-Windows: Pre-requisites are <a href="https://git-scm.com/install/windows" target="_blank">Github for Windows</a> and <a href="https://chalet-work.space/download/" target="_blank">Chalet Build System</a>.
+Windows: Pre-requisites are <a href="https://git-scm.com/install/windows" target="_blank">Git for Windows</a> and <a href="https://chalet-work.space/download/" target="_blank">Chalet Build System</a>.
 You run the install script from git bash. after installation is complete you can run Powershell or other shell to build and run your projects.
 
 ## ofGen
