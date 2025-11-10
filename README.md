@@ -1,13 +1,13 @@
+You can use the following script to test ofWorks fork<br>
+```bash
+curl -fsSL https://dmtr.org/of.sh | bash
+```
 ```
  o-o  o--o o       o  o-o  o--o  o  o  o-o
 o   o |    |       | o   o |   | | /  |
 |   | O-o  o   o   o |   | O-Oo  OO    o-o
 o   o |     \ / \ /  o   o |  \  | \      |
  o-o  o      o   o    o-o  o   o o  o o--o
-```
-You can use the following script to test ofWorks fork<br>
-```bash
-curl -fsSL https://dmtr.org/of.sh | bash
 ```
 This script install everything needed (libraries, ofGen) to run your projects<br>
 ofGen is a command line project generator and it will be available in your path.<br>
